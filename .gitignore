@@ -1,2 +1,6 @@
 #Ignore repeated history
 .history
+
+#Image files
+*.jpg
+*.png
