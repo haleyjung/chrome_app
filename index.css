@@ -8,7 +8,7 @@
 body {
   background-color: palevioletred;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 main {
@@ -36,12 +36,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 100px;
+  cursor: default;
 }
 
 .js-name {
-  font-size: 40px;
+  font-size: 50px;
   padding-bottom: 10px;
+  cursor: default;
 }
 
 .js-form,
@@ -58,7 +60,11 @@ input {
   outline: none;
   border-bottom: 2px dashed white;
   background-color: transparent;
-  padding: 5px 50px;
+  padding: 10px 100px;
+}
+
+input[type="text"] {
+  font-size: 30px;
 }
 
 input::placeholder {
@@ -79,6 +85,7 @@ input::placeholder {
   margin: 0px 10px 0px -80px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 ul {
