@@ -9,7 +9,7 @@ const IMG_NUMBER = 3;
 
 function paintImage(imgNumber){
     const image = new Image();
-    image.src = `/img/${imgNumber + 1}.jpg`;
+    image.src = `/img/lamiesstudio-${imgNumber + 1}.png`;
     image.classList.add('bgImage');
     body.prepend(image);
     // image.addEventListener("loadend", handleImgLoad);
@@ -22,7 +22,7 @@ function genRandom(){
 
 function init(){
     const randomNumber = genRandom();
-    paintImage(randomNumber)
+    paintImage(randomNumber);
 }
 
 init();
