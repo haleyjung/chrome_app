@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+* {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+}
+
+body {
+  background-color: palevioletred;
+  color: white;
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-weather {
+  padding: 3px 15px;
+  border-radius: 30px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4);
+  background-color: white;
+  box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.js-weather:hover {
+  cursor: default;
+  color: red;
+}
+
+.js-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  cursor: default;
+}
+
+.js-name {
+  font-size: 50px;
+  padding-bottom: 10px;
+  cursor: default;
+}
+
+.js-form,
+.js-toDoForm {
+  background-color: none;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 2px dashed white;
+  background-color: transparent;
+  padding: 5px 50px;
+}
+
+input::placeholder {
+  text-align: center;
+  color: white;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.js-toDoList button {
+  margin: 0px 10px 0px -80px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
